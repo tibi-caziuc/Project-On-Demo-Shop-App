@@ -1,0 +1,1 @@
+{"uuid":"76a0363e-f395-4cbe-8a7a-3318fdd96fac","name":"Project-On-Demo-Shop-App","children":["c5d0be1e-7347-49fa-a0a8-825fb1fdcbd7"],"befores":[{"name":"setupConfig","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1683460105052,"stop":1683460105074}],"afters":[],"start":1683460105020,"stop":1683460112056}
