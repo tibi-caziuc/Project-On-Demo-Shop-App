@@ -29,7 +29,7 @@ public class AddToCartTest extends BaseTestConfig {
         footer.resetPage();
     }
     @Test
-    public void addPracticalMetalMouseProductInCartNumberOfProductsInCartIsOne() {
+    public void testAddPracticalMetalMouseProductInCartNumberOfProductsInCartIsOne() {
         ProductDetailsPage detailsPage = new ProductDetailsPage();
         detailsPage.clickOnTheAddToBasketButton();
 
@@ -38,7 +38,7 @@ public class AddToCartTest extends BaseTestConfig {
     }
 
     @Test
-    public void addTwoPracticalMetalMouseProductsInCart() {
+    public void testAddTwoPracticalMetalMouseProductsInCart() {
         ProductDetailsPage detailsPage = new ProductDetailsPage();
         detailsPage.clickOnTheAddToBasketButton();
         detailsPage.clickOnTheAddToBasketButton();
@@ -48,7 +48,7 @@ public class AddToCartTest extends BaseTestConfig {
     }
 
     @Test
-    public void addMetalMouseToCartTotalCostIsCorrectlyAdded() {
+    public void testAddMetalMouseToCartTotalCostIsCorrectlyAdded() {
         ProductDetailsPage detailsPage = new ProductDetailsPage();
         detailsPage.clickOnTheAddToBasketButton();
 
@@ -61,7 +61,7 @@ public class AddToCartTest extends BaseTestConfig {
     }
 
     @Test
-    public void addTwoPracticalMetalMouseToCartTotalCostIsCorrectlyAdded() {
+    public void testAddTwoPracticalMetalMouseToCartTotalCostIsCorrectlyAdded() {
         ProductDetailsPage detailsPage = new ProductDetailsPage();
         detailsPage.clickOnTheAddToBasketButton();
         detailsPage.clickOnTheAddToBasketButton();

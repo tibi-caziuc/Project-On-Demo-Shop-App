@@ -38,7 +38,7 @@ public class OrderSummaryTest extends BaseTestConfig {
         footer.resetPage();
     }
     @Test
-    public void navigateToOrderSummaryPage() {
+    public void testNavigateToOrderSummaryPage() {
         OrderSummaryPage orderSummaryPage = new OrderSummaryPage();
         Assert.assertTrue(orderSummaryPage.isOrderSummaryTitleDisplayed());
     }

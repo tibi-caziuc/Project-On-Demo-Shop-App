@@ -10,7 +10,6 @@ import org.testng.annotations.BeforeTest;
 
 public class BaseTestConfig {
     public BaseTestConfig() {
-        //Configuration.browser = "Firefox";
     }
     @BeforeClass
     static void setupAllureReports() {

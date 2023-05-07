@@ -5,7 +5,6 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.$;
 
 public class OrderCompletePage {
-    private final SelenideElement orderCompleteTitle = $("small[class='text-muted']");
 
     private final SelenideElement orderCompleteMessage = $("div[class='text-center']");
 

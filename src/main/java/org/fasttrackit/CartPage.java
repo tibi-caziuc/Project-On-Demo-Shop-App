@@ -23,25 +23,6 @@ public class CartPage extends Page {
 
     private final SelenideElement noProductsInCartMessage = $("div[class='text-center container']");
 
-    public int getNumberOfDistinctProducts() {
-        return distinctProducts.size();
-    }
-
-    public int getTotalProductsInCart() {
-        int totalProducts = 0;
-        for (SelenideElement product : distinctProducts) {
-            SelenideElement row = product.parent().parent();
-            SelenideElement div = row.$("div");
-            String numberOfProductsFromType = div.text();
-            totalProducts += Integer.parseInt(numberOfProductsFromType);
-        }
-        return totalProducts;
-    }
-
-    public List<Product> getProductsInCart() {
-        return productsInCart;
-    }
-
     public double getTotalCartCostBasedOnProducts() {
         double totalCartCost = 0.0;
         for (SelenideElement product : distinctProducts) {

@@ -33,7 +33,7 @@ public class CheckoutTest extends BaseTestConfig {
         footer.resetPage();
     }
     @Test
-    public void navigateToCheckoutPage() {
+    public void testNavigateToCheckoutPage() {
         CheckoutPage checkoutPage = new CheckoutPage();
         Assert.assertTrue(checkoutPage.isCheckoutTitleDisplayed());
     }

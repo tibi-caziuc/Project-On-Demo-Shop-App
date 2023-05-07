@@ -31,7 +31,7 @@ public class LoginTest extends BaseTestConfig {
     }
 
     @Test(dataProviderClass = UserDataProvider.class, dataProvider = "validUserDataProvider")
-    public void userCanLoginOnDemoShopPage(User user) {
+    public void testUserCanLoginOnDemoShopPage(User user) {
         page.getHeader().clickOnTheLoginButton();
         LoginModal loginModal = new LoginModal();
         loginModal.fillInUsername(user.getUsername());
@@ -41,7 +41,7 @@ public class LoginTest extends BaseTestConfig {
     }
 
     @Test(dataProviderClass = UserDataProvider.class, dataProvider = "invalidUserDataProvider")
-    public void userCanNotLoginOnDemoShopPageWithInvalidUser(User user) {
+    public void testUserCanNotLoginOnDemoShopPageWithInvalidUser(User user) {
         page.getHeader().clickOnTheLoginButton();
         LoginModal loginModal = new LoginModal();
         loginModal.fillInUsername(user.getUsername());

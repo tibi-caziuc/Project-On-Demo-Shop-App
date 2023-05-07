@@ -32,7 +32,7 @@ public class WishlistTest extends BaseTestConfig {
     }
 
     @Test
-    public void addProductToWishlistFromHomePage() {
+    public void testAddProductToWishlistFromHomePage() {
         Product metalMagicMouse = new Product("7", "Practical Metal Mouse", "9.99");
         metalMagicMouse.addToWishlist();
         WishlistPage wishlistPage = new WishlistPage();
@@ -42,7 +42,7 @@ public class WishlistTest extends BaseTestConfig {
     }
 
     @Test
-    public void addProductToWishlistFromProductDetails() {
+    public void testAddProductToWishlistFromProductDetails() {
         Product incredibleConcreteHat = new Product("2", "Incredible Concrete Hat", "7.99");
         incredibleConcreteHat.clickOnTheProductLink();
         WishlistPage wishlistPage = new WishlistPage();
